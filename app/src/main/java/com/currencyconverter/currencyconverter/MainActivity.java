@@ -1,15 +1,19 @@
 package com.currencyconverter.currencyconverter;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Spinner;
-import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
 
     private Spinner currency1;
     private Spinner currency2;
+    private ProgressDialog pDialog;
+    private ListView lv;
+    private static final String TAG = "MainActivity";
     private String currency1Items[] = {"AUD", "BGN", "BRL", "CAD", "CHF", "CNY", "CZK", "DKK", "GBP"
                                         , "HKD", "HUF", "IDR", "ILS", "INR", "JPY", "KRW", "MXN", "MYR"
                                         , "NOK", "NZD", "PHP", "PLN", "RON", "RUB", "SEK", "SGD", "THB"
@@ -18,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
                                         , "HKD", "HUF", "IDR", "ILS", "INR", "JPY", "KRW", "MXN", "MYR"
                                         , "NOK", "NZD", "PHP", "PLN", "RON", "RUB", "SEK", "SGD", "THB"
                                         , "TRY", "USD", "ZAR"};
+
+    public String currentBase = "USD";
+    private String url = "http://api.fixer.io/latest?base="+currentBase;
 
 
     @Override
@@ -47,5 +54,8 @@ public class MainActivity extends AppCompatActivity {
         //setOnItemSelectedListener will come here
 
         //
+
+
     }
+
 }
