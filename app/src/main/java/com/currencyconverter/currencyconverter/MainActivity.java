@@ -1,7 +1,10 @@
 package com.currencyconverter.currencyconverter;
 
 import android.app.ProgressDialog;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -11,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Spinner currency1;
     private Spinner currency2;
-    private ProgressDialog pDialog;
     private ListView lv;
     private static final String TAG = "MainActivity";
     private String currency1Items[] = {"AUD", "BGN", "BRL", "CAD", "CHF", "CNY", "CZK", "DKK", "GBP"
@@ -58,4 +60,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public class MyAsyncTask extends AsyncTask {
+        protected Object doInBackground(Object[] object) {
+            return null;
+        }
+    }
 }
