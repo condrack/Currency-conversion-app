@@ -1,45 +1,40 @@
 package com.currencyconverter.currencyconverter;
 
-public class MyPojo
-{
+public class MyPojo {
     private String base;
 
     private Rates rates;
 
     private String date;
 
-    public String getBase ()
-    {
+    public String getBase() {
         return base;
     }
 
-    public void setBase (String base)
-    {
+    public void setBase(String base) {
         this.base = base;
     }
 
-    public Rates getRates ()
-    {
+    public Rates getRates() {
         return rates;
     }
 
-    public void setRates (Rates rates)
-    {
+    public void setRates(Rates rates) {
         this.rates = rates;
     }
 
-    public String getDate ()
-    {
+    public String getDate() {
         return date;
     }
 
-    public void setDate (String date)
-    {
+    public void setDate(String date) {
         this.date = date;
     }
+
+
+
     @Override
-    public String toString()
-    {
-        return "ClassPojo [base = "+base+", rates = "+rates+", date = "+date+"]";
+    public String toString() {
+        return "ClassPojo [base = " + base + ", rates = " + rates + ", date = " + date + "]";
     }
 }

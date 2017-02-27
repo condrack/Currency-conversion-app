@@ -1,7 +1,6 @@
 package com.currencyconverter.currencyconverter;
 
-public class Rates
-{
+public class Rates {
     private String CNY;
 
     private String JPY;
@@ -64,319 +63,256 @@ public class Rates
 
     private String KRW;
 
-    public String getCNY ()
-    {
+    public String getCNY() {
         return CNY;
     }
 
-    public void setCNY (String CNY)
-    {
+    public void setCNY(String CNY) {
         this.CNY = CNY;
     }
 
-    public String getJPY ()
-    {
+    public String getJPY() {
         return JPY;
     }
 
-    public void setJPY (String JPY)
-    {
+    public void setJPY(String JPY) {
         this.JPY = JPY;
     }
 
-    public String getCZK ()
-    {
+    public String getCZK() {
         return CZK;
     }
 
-    public void setCZK (String CZK)
-    {
+    public void setCZK(String CZK) {
         this.CZK = CZK;
     }
 
-    public String getRON ()
-    {
+    public String getRON() {
         return RON;
     }
 
-    public void setRON (String RON)
-    {
+    public void setRON(String RON) {
         this.RON = RON;
     }
 
-    public String getMXN ()
-    {
+    public String getMXN() {
         return MXN;
     }
 
-    public void setMXN (String MXN)
-    {
+    public void setMXN(String MXN) {
         this.MXN = MXN;
     }
 
-    public String getCAD ()
-    {
+    public String getCAD() {
         return CAD;
     }
 
-    public void setCAD (String CAD)
-    {
+    public void setCAD(String CAD) {
         this.CAD = CAD;
     }
 
-    public String getZAR ()
-    {
+    public String getZAR() {
         return ZAR;
     }
 
-    public void setZAR (String ZAR)
-    {
+    public void setZAR(String ZAR) {
         this.ZAR = ZAR;
     }
 
-    public String getAUD ()
-    {
+    public String getAUD() {
         return AUD;
     }
 
-    public void setAUD (String AUD)
-    {
+    public void setAUD(String AUD) {
         this.AUD = AUD;
     }
 
-    public String getNZD ()
-    {
+    public String getNZD() {
         return NZD;
     }
 
-    public void setNZD (String NZD)
-    {
+    public void setNZD(String NZD) {
         this.NZD = NZD;
     }
 
-    public String getGBP ()
-    {
+    public String getGBP() {
         return GBP;
     }
 
-    public void setGBP (String GBP)
-    {
+    public void setGBP(String GBP) {
         this.GBP = GBP;
     }
 
-    public String getILS ()
-    {
+    public String getILS() {
         return ILS;
     }
 
-    public void setILS (String ILS)
-    {
+    public void setILS(String ILS) {
         this.ILS = ILS;
     }
 
-    public String getNOK ()
-    {
+    public String getNOK() {
         return NOK;
     }
 
-    public void setNOK (String NOK)
-    {
+    public void setNOK(String NOK) {
         this.NOK = NOK;
     }
 
-    public String getCHF ()
-    {
+    public String getCHF() {
         return CHF;
     }
 
-    public void setCHF (String CHF)
-    {
+    public void setCHF(String CHF) {
         this.CHF = CHF;
     }
 
-    public String getRUB ()
-    {
+    public String getRUB() {
         return RUB;
     }
 
-    public void setRUB (String RUB)
-    {
+    public void setRUB(String RUB) {
         this.RUB = RUB;
     }
 
-    public String getINR ()
-    {
+    public String getINR() {
         return INR;
     }
 
-    public void setINR (String INR)
-    {
+    public void setINR(String INR) {
         this.INR = INR;
     }
 
-    public String getTHB ()
-    {
+    public String getTHB() {
         return THB;
     }
 
-    public void setTHB (String THB)
-    {
+    public void setTHB(String THB) {
         this.THB = THB;
     }
 
-    public String getIDR ()
-    {
+    public String getIDR() {
         return IDR;
     }
 
-    public void setIDR (String IDR)
-    {
+    public void setIDR(String IDR) {
         this.IDR = IDR;
     }
 
-    public String getTRY ()
-    {
+    public String getTRY() {
         return TRY;
     }
 
-    public void setTRY (String TRY)
-    {
+    public void setTRY(String TRY) {
         this.TRY = TRY;
     }
 
-    public String getSGD ()
-    {
+    public String getSGD() {
         return SGD;
     }
 
-    public void setSGD (String SGD)
-    {
+    public void setSGD(String SGD) {
         this.SGD = SGD;
     }
 
-    public String getHKD ()
-    {
+    public String getHKD() {
         return HKD;
     }
 
-    public void setHKD (String HKD)
-    {
+    public void setHKD(String HKD) {
         this.HKD = HKD;
     }
 
-    public String getHRK ()
-    {
+    public String getHRK() {
         return HRK;
     }
 
-    public void setHRK (String HRK)
-    {
+    public void setHRK(String HRK) {
         this.HRK = HRK;
     }
 
-    public String getDKK ()
-    {
+    public String getDKK() {
         return DKK;
     }
 
-    public void setDKK (String DKK)
-    {
+    public void setDKK(String DKK) {
         this.DKK = DKK;
     }
 
-    public String getSEK ()
-    {
+    public String getSEK() {
         return SEK;
     }
 
-    public void setSEK (String SEK)
-    {
+    public void setSEK(String SEK) {
         this.SEK = SEK;
     }
 
-    public String getMYR ()
-    {
+    public String getMYR() {
         return MYR;
     }
 
-    public void setMYR (String MYR)
-    {
+    public void setMYR(String MYR) {
         this.MYR = MYR;
     }
 
-    public String getBRL ()
-    {
+    public String getBRL() {
         return BRL;
     }
 
-    public void setBRL (String BRL)
-    {
+    public void setBRL(String BRL) {
         this.BRL = BRL;
     }
 
-    public String getEUR ()
-    {
+    public String getEUR() {
         return EUR;
     }
 
-    public void setEUR (String EUR)
-    {
+    public void setEUR(String EUR) {
         this.EUR = EUR;
     }
 
-    public String getBGN ()
-    {
+    public String getBGN() {
         return BGN;
     }
 
-    public void setBGN (String BGN)
-    {
+    public void setBGN(String BGN) {
         this.BGN = BGN;
     }
 
-    public String getHUF ()
-    {
+    public String getHUF() {
         return HUF;
     }
 
-    public void setHUF (String HUF)
-    {
+    public void setHUF(String HUF) {
         this.HUF = HUF;
     }
 
-    public String getPHP ()
-    {
+    public String getPHP() {
         return PHP;
     }
 
-    public void setPHP (String PHP)
-    {
+    public void setPHP(String PHP) {
         this.PHP = PHP;
     }
 
-    public String getPLN ()
-    {
+    public String getPLN() {
         return PLN;
     }
 
-    public void setPLN (String PLN)
-    {
+    public void setPLN(String PLN) {
         this.PLN = PLN;
     }
 
-    public String getKRW ()
-    {
+    public String getKRW() {
         return KRW;
     }
 
-    public void setKRW (String KRW)
-    {
+    public void setKRW(String KRW) {
         this.KRW = KRW;
     }
 
     @Override
-    public String toString()
-    {
-        return "ClassPojo [CNY = "+CNY+", JPY = "+JPY+", CZK = "+CZK+", RON = "+RON+", MXN = "+MXN+", CAD = "+CAD+", ZAR = "+ZAR+", AUD = "+AUD+", NZD = "+NZD+", GBP = "+GBP+", ILS = "+ILS+", NOK = "+NOK+", CHF = "+CHF+", RUB = "+RUB+", INR = "+INR+", THB = "+THB+", IDR = "+IDR+", TRY = "+TRY+", SGD = "+SGD+", HKD = "+HKD+", HRK = "+HRK+", DKK = "+DKK+", SEK = "+SEK+", MYR = "+MYR+", BRL = "+BRL+", EUR = "+EUR+", BGN = "+BGN+", HUF = "+HUF+", PHP = "+PHP+", PLN = "+PLN+", KRW = "+KRW+"]";
+    public String toString() {
+        return "ClassPojo [CNY = " + CNY + ", JPY = " + JPY + ", CZK = " + CZK + ", RON = " + RON + ", MXN = " + MXN + ", CAD = " + CAD + ", ZAR = " + ZAR + ", AUD = " + AUD + ", NZD = " + NZD + ", GBP = " + GBP + ", ILS = " + ILS + ", NOK = " + NOK + ", CHF = " + CHF + ", RUB = " + RUB + ", INR = " + INR + ", THB = " + THB + ", IDR = " + IDR + ", TRY = " + TRY + ", SGD = " + SGD + ", HKD = " + HKD + ", HRK = " + HRK + ", DKK = " + DKK + ", SEK = " + SEK + ", MYR = " + MYR + ", BRL = " + BRL + ", EUR = " + EUR + ", BGN = " + BGN + ", HUF = " + HUF + ", PHP = " + PHP + ", PLN = " + PLN + ", KRW = " + KRW + "]";
     }
 }
