@@ -20,7 +20,7 @@ public class Json_get {
 
     }
 
-    public static String[] getUserData(String base) {
+    public String[] getUserData(String base) {
         String json = null;
         try {
             json = getJSON("http://api.fixer.io/latest?base=" + base);
@@ -30,11 +30,11 @@ public class Json_get {
         Gson gson = new Gson();
         MyPojo myPojo = gson.fromJson(json, MyPojo.class);
 
-        return new String[]{"base: " + myPojo.getBase(), "date: " + myPojo.getDate()
+        // return myPojo.rates hashmap
+        return new String[]{myPojo.getBase(), "date: " + myPojo.getDate()
                 , "rates: " + myPojo.getRates()};
     }
-    public static Map<String, Double> getCurrencyValues()
-
+    //public static Map<String, Double> getCurrencyValues()
 
 
 }

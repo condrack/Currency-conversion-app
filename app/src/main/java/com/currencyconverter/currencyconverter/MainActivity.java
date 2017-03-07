@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private HashMap<String, Double> hmap;
 
     public String currentBase = "USD";
+    public String convertTo = "JPY";
     private String url = "http://api.fixer.io/latest?base=" + currentBase;
 
 
@@ -54,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
         currency1.setAdapter(adapterForSpinner1);
         currency2.setAdapter(adapterForSpinner2);
 
-
-
+        currentBase = currency1.getSelectedItem().toString();
+        convertTo = currency2.getSelectedItem().toString();
         //debug to check conversion rates
 
         //TextView test2 = (TextView) findViewById(R.id.textViewName);
@@ -68,9 +69,10 @@ public class MainActivity extends AppCompatActivity {
     public class MyAsyncTask extends AsyncTask {
         protected Object doInBackground(Object[] object) {
 
-            for(String str : jsonGetObject.getUserData("USD")) {
-                //System.out.println(str);
+            for(String str : jsonGetObject.getUserData(currentBase)) {
+
             }
+
             return null;
         }
     }
