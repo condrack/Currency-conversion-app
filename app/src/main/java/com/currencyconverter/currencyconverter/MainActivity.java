@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     public class MyAsyncTask extends AsyncTask {
         protected Object doInBackground(Object[] object) {
 
-            for(String str : jsonGetObject.getUserData(currentBase)) {
+            for (String str : jsonGetObject.getUserData(currentBase, convertTo)) {
 
             }
 
