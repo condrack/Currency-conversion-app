@@ -1,6 +1,7 @@
 package com.currencyconverter.currencyconverter;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 
 import com.google.gson.Gson;
@@ -10,6 +11,8 @@ import okhttp3.Request;
 
 public class Json_get {
     private static OkHttpClient client = new OkHttpClient();
+
+    public HashMap<String, Double> hmap = new HashMap<>();
 
     public static String getJSON(String url) throws IOException {
         Request request = new Request.Builder()
@@ -36,9 +39,10 @@ public class Json_get {
 //                , "rates: " + myPojo.getRates()};
 //    }
 
-    public String[] getUserData(String base, String secondary) {
+    public HashMap getUserData(String base, String secondary) {
         String json = null;
-        String secondaryValue;
+
+
 
         try {
             json = getJSON("http://api.fixer.io/latest?base=" + base);
@@ -47,6 +51,17 @@ public class Json_get {
         }
         Gson gson = new Gson();
         MyPojo myPojo = gson.fromJson(json, MyPojo.class);
+
+        hmap.clear();
+        setMapValues(base, myPojo);
+        setMapValues(secondary, myPojo);
+
+        return hmap;
+    }
+
+    private void setMapValues(String secondary, MyPojo myPojo) {
+        String secondaryValue;
+        Double secValue;
 
         if (secondary == "AUD") {
             secondaryValue = myPojo.getAUD();
@@ -116,10 +131,8 @@ public class Json_get {
             secondaryValue = null;
         }
 
-        // return myPojo.rates hashmap
-        return new String[]{myPojo.getBase(), "date: " + myPojo.getDate()
-                , "rates: " + myPojo.getRates()};
+        secValue = Double.parseDouble(secondaryValue);
+        hmap.put(secondary, secValue);
     }
-
 
 }

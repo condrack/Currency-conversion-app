@@ -12,6 +12,8 @@ import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
+    //CHANGE THE ID OF THE USER INPUT TEXT FIELDS ON ACTIVITY MAIN XML
+
     private Spinner currency1;
     private Spinner currency2;
     private ListView lv;
@@ -55,8 +57,10 @@ public class MainActivity extends AppCompatActivity {
         currency1.setAdapter(adapterForSpinner1);
         currency2.setAdapter(adapterForSpinner2);
 
-        currentBase = currency1.getSelectedItem().toString();
-        convertTo = currency2.getSelectedItem().toString();
+        //currentBase = currency1.getSelectedItem().toString();
+        //convertTo = currency2.getSelectedItem().toString();
+        
+        jsonGetObject = new Json_get();
         //debug to check conversion rates
 
         //TextView test2 = (TextView) findViewById(R.id.textViewName);
@@ -69,11 +73,20 @@ public class MainActivity extends AppCompatActivity {
     public class MyAsyncTask extends AsyncTask {
         protected Object doInBackground(Object[] object) {
 
-            for (String str : jsonGetObject.getUserData(currentBase, convertTo)) {
-
-            }
+            hmap = jsonGetObject.getUserData(currentBase, convertTo);
 
             return null;
         }
     }
+
+    public String conversion(HashMap valuesMap) {
+        String afterConversion;
+        Double result = 00.00;
+
+
+
+        afterConversion = String.valueOf(result);
+        return afterConversion;
+    }
+
 }
